@@ -1,5 +1,5 @@
 name: godep
-version: 1.107.1
+version: 1.107.2
 inherits: wercker/golang@1.2.1
 type: main
 platform: ubuntu@12.04
