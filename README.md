@@ -39,7 +39,7 @@ build:
 ```
 
 
-## versions
+## Versioning
 
 The current version is **1.107.1**.
 
