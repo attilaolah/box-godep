@@ -1,0 +1,49 @@
+name: godep
+version: 0-107-ge28d568
+inherits: wercker/golang@1.2.0
+type: main
+platform: ubuntu@12.04
+description: Extends wercker golang box to include github.com/tools/godep for faster builds.
+keywords:
+  - go
+  - godep
+  - golang
+packages:
+  - godep@0-107-ge28d568
+script: |
+  version="0-107-ge28d568"
+  go get -u github.com/tools/godep
+  go install github.com/tools/godep
+
+box-detect:
+  priority : 900
+  version :
+  detect:
+    - files:
+      - Godeps
+
+default-build:
+  go:
+    priority : 50
+    detect:
+      - default: true
+    text-to-append: |
+      # Build definition
+      build:
+        # The steps that will be executed on build
+        steps:
+          # Sets the go workspace and places you package
+          # at the right place in the workspace tree
+          - setup-go-workspace
+
+          # Build the project
+          - script:
+              name: godep go build
+              code: |
+                godep go build ./...
+
+          # Test the project
+          - script:
+              name: godep go test
+              code: |
+                godep go test ./...
