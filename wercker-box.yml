@@ -1,6 +1,6 @@
 name: godep
-version: 0-107-ge28d568
-inherits: wercker/golang@1.2.0
+version: 1.0.107
+inherits: wercker/golang@1.2.1
 type: main
 platform: ubuntu@12.04
 description: Extends wercker golang box to include github.com/tools/godep for faster builds.
@@ -9,9 +9,8 @@ keywords:
   - godep
   - golang
 packages:
-  - godep@0-107-ge28d568
+  - godep@1.0.107
 script: |
-  version="0-107-ge28d568"
   go get -u github.com/tools/godep
   go install github.com/tools/godep
 
