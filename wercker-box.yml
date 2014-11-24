@@ -1,5 +1,5 @@
 name: godep
-version: 1.0.107
+version: 1.107.0
 inherits: wercker/golang@1.2.1
 type: main
 platform: ubuntu@12.04
@@ -9,7 +9,7 @@ keywords:
   - godep
   - golang
 packages:
-  - godep@1.0.107
+  - godep
 script: |
   go get -u github.com/tools/godep
   go install github.com/tools/godep

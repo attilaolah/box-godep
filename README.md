@@ -1,4 +1,4 @@
-# Wercker [`godep`][1] box [![wercker status](https://app.wercker.com/status/5b8737d411d017d8a11701d74d9874da/s "wercker status")](https://app.wercker.com/project/bykey/5b8737d411d017d8a11701d74d9874da)
+# Wercker [godep][1] box [![wercker status](https://app.wercker.com/status/5b8737d411d017d8a11701d74d9874da/s "wercker status")](https://app.wercker.com/project/bykey/5b8737d411d017d8a11701d74d9874da)
 
 Box that extends the default wercker/golang box to include godep for faster
 builds.
@@ -41,15 +41,17 @@ build:
 
 ## versions
 
-The current version is **1.0.107**.
+The current version is **1.107.0**.
 
-The major and minor versions will remain at 1 and 0, respectively. The build
-number (currently 107) will increase as [godep][2] itself is updated.
+The major version will remain at 1. The minor version (currently 107) will
+increase as [godep][2] itself is updated. The patch (or bug-fix) will be zero
+unless I need to change something in the box itself without updating godep (for
+example, updating the platform the box runs on).
 
 You can pin to a specific version like this:
 
 ```yaml
-box: attilaolah/godep@1.0.107
+box: attilaolah/godep@1.107.0
 ```
 
 [1]: //app.wercker.com/#applications/547330e6a60c33c27c279f8e/tab/details
