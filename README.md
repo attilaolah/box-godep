@@ -41,7 +41,7 @@ build:
 
 ## Versioning
 
-The current version is **1.107.3**.
+The current version is **1.113.0**.
 
 The major version will remain at 1. The minor version (currently 107) will
 increase as [godep][2] itself is updated. The patch (or bug-fix) will be zero
@@ -51,7 +51,7 @@ example, updating the platform the box runs on).
 You can pin to a specific version like this:
 
 ```yaml
-box: attilaolah/godep@1.107.3
+box: attilaolah/godep@1.113.0
 ```
 
 [1]: //app.wercker.com/#applications/547330e6a60c33c27c279f8e/tab/details
