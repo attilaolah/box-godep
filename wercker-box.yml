@@ -1,6 +1,6 @@
 name: godep
 version: 1.107.2
-inherits: wercker/golang@1.2.1
+inherits: wercker/golang@1.3.2
 type: main
 platform: ubuntu@12.04
 description: Extends the Wercker Go box (wercker/golang) to include github.com/tools/godep for faster builds.
